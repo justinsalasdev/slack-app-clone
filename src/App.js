@@ -1,11 +1,35 @@
 import './App.css';
+import Login from './components/login/Login'
+import LoginForm from './components/login/LoginForm'
 
-function App() {
+
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  //Redirect
+} from "react-router-dom";
+
+const App = () => {
+
+
   return (
-    <div className="App">
-      <h1>Slack App Clone</h1>
-    </div>
+    <Router>
+    <Switch>
+      
+      <Route exact path="/">
+        <Login />
+      </Route>
+
+      <Route exact path="/login">
+        <LoginForm />
+      </Route>
+
+    </Switch>
+  </Router>
+
   );
 }
 
 export default App;
+
