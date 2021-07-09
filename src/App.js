@@ -1,6 +1,6 @@
 import './App.css';
-import Login from './components/login/Login'
-import LoginForm from './components/login/LoginForm'
+import Login from './components/Login/login'
+import LoginForm from './components/Login/LoginForm'
 
 
 import {
